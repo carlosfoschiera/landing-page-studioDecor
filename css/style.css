@@ -1,0 +1,232 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --primary: #eb1ccc;
+    --secundary:  #95989a;
+    --text-color-primary: #fff;
+    --text-color-secondary: #000;
+    --text-color-tertiary: #5d5d5d;
+}
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,700;1,100&display=swap');
+/* font-family: 'Poppins', sans-serif; */
+
+/* Event form */
+
+#event-description {
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url("../img/img4.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 85vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--text-color-primary)
+}
+
+#disclaimer h2,
+#disclaimer .evento-data {
+    color: var(--primary)
+}
+
+#disclaimer h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+#disclaimer .sobre-evento {
+    font-size: 2em;
+    text-transform: uppercase;
+    max-width: 350px;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+#disclaimer p {
+    font-size: 1.2em;
+    margin-bottom: 0.3em;
+}
+
+#disclaimer .evento-data {
+    font-weight: bold;
+}
+
+#formulario {
+    background-color: var(--secundary);
+    padding: 2em;
+    max-width: 22%;
+}
+
+#formulario p {
+    font-size: 1.5em;
+    color: var(--text-color-secondary);
+    margin-bottom: 1em;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.8em;
+}
+
+.form-group label {
+    color: var(--text-color-tertiary);
+    margin-bottom: 0.3em;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+    padding: 6px 8px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.btn {
+    background: var(--primary);
+    color: var(--text-color-primary);
+    text-transform: uppercase;
+    width: 100%;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.btn:hover {
+    opacity: 1;
+}
+
+/* beneficios */
+
+#beneficios-llave h2 {
+    background-color: var(--secundary);
+    text-align: center;
+    padding: 2em;
+    font-weight: 500;
+}
+
+.beneficios {
+    display: flex;
+    justify-content: space-around;
+    padding: 4em;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.beneficio {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 20%;
+    color: var(--text-color-tertiary);
+}
+
+.beneficio .beneficio-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 1em;
+}
+
+#beneficio-1 {
+    background-image: url(../img/img1.jpg);
+}
+
+#beneficio-2 {
+    background-image: url(../img/img2.jpg);
+}
+
+#beneficio-3 {
+    background-image: url(../img/img3.jpg);
+}
+
+/* localizacion del evento */
+
+#localizacion {
+    height: 500px;
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url("../img/img5.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--text-color-primary);
+   /* margin-bottom: 3em;*/
+
+}
+
+#direccion, #sobre-localizacion {
+    max-width: 30%;
+
+}
+#direccion {
+    display: flex;
+}
+
+#direccion i {
+    color: var(--primary);
+    font-size: 4em;
+    margin-right: 0.5em;
+}
+#detalles-direccion {
+    text-align: center;
+    font-size: 1.3em;
+}
+
+#sobre-localizacion h3 {
+    color: var(--primary);
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+}
+
+#sobre-localizacion p {
+    line-height: 1.5em;
+}
+
+#derechos-reservados footer {
+    background: var(--secundary);
+    text-align: center;
+    padding: 2em;
+    font-weight: 500;
+}
+
+#derechos-reservados p {
+    text-align: center;
+}
+
+/* Mobile */
+
+@media (max-width: 450px) {
+    #event-description {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #disclaimer {
+        padding: 2em;
+    }
+
+    #disclaimer h2 {
+        margin-bottom: 0.5em;
+    }
+
+    #formulario {
+        max-width: 70%;
+        margin-bottom: 2em;
+    }
+
+}
